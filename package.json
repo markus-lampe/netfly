@@ -1,0 +1,21 @@
+{
+  "name": "netfly.io",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Markus Lampe",
+  "scripts": {
+    "build": "esbuild src/index.tsx --bundle --outfile=build/bundle.js --loader:.ts=tsx --format=cjs",
+    "serve": "npx http-server build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.8",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@typescript-eslint/parser": "^7.0.1"
+  }
+}
