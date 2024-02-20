@@ -25,15 +25,17 @@
     <script>
       (async () => {
         if (typeof navigator.serviceWorker === 'object') {
-          const registrations = await navigator.serviceWorker.getRegistrations()
-          for (const registration of registrations) {
-            await registration.unregister();
-          }
-
-          await navigator.serviceWorker.register(
+          const registration = await navigator.serviceWorker.register(
             'service-worker.js',
             { scope: '/netfly/public/' }
           )
+
+          if (registration.active) {
+            const registrations = await navigator.serviceWorker.getRegistrations()
+            for (const registration of registrations) {
+              await registration.unregister();
+            }
+          }
         }
       })()
     </script>
