@@ -4,8 +4,8 @@
   "license": "MIT",
   "author": "Markus Lampe",
   "scripts": {
-    "build": "esbuild src/index.tsx --bundle --outfile=build/bundle.js --loader:.ts=tsx --format=cjs",
-    "serve": "npx http-server build"
+    "build": "esbuild src/index.tsx --bundle --outfile=public/app.js --loader:.ts=tsx --format=cjs",
+    "serve": "npx http-server public"
   },
   "dependencies": {
     "react": "^18.2.0",
