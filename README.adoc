@@ -26,4 +26,6 @@ TODO
 
 == Acknowledgments
 
+*Icons:* https://fonts.google.com/icons[Material Symbols (Google)]
+
 TODO

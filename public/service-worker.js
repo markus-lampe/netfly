@@ -21,7 +21,7 @@ self.addEventListener('fetch', async event => {
   const freshResponse = await fetch(event.request)
 
   if (freshResponse.ok) {
-    const cache = caches.open(CACHE_NAME)
+    const cache = await caches.open(CACHE_NAME)
     await cache.put(event.request, freshResponse.clone())
     await event.respondWith(freshResponse)
     return;

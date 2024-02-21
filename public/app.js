@@ -2382,9 +2382,9 @@ var require_react_dom_development = __commonJS({
         if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart === "function") {
           __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
         }
-        var React3 = require_react();
+        var React9 = require_react();
         var Scheduler = require_scheduler();
-        var ReactSharedInternals = React3.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+        var ReactSharedInternals = React9.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
         var suppressWarning = false;
         function setSuppressWarning(newSuppressWarning) {
           {
@@ -3989,7 +3989,7 @@ var require_react_dom_development = __commonJS({
           {
             if (props.value == null) {
               if (typeof props.children === "object" && props.children !== null) {
-                React3.Children.forEach(props.children, function(child) {
+                React9.Children.forEach(props.children, function(child) {
                   if (child == null) {
                     return;
                   }
@@ -12436,7 +12436,7 @@ var require_react_dom_development = __commonJS({
           }
         }
         var fakeInternalInstance = {};
-        var emptyRefsObject = new React3.Component().refs;
+        var emptyRefsObject = new React9.Component().refs;
         var didWarnAboutStateAssignmentForComponent;
         var didWarnAboutUninitializedState;
         var didWarnAboutGetSnapshotBeforeUpdateWithoutDidUpdate;
@@ -23545,11 +23545,11 @@ var require_shallowequal = __commonJS({
 });
 
 // src/index.tsx
-var import_react3 = __toESM(require_react());
+var import_react9 = __toESM(require_react());
 var import_client = __toESM(require_client());
 
 // src/App.tsx
-var import_react2 = __toESM(require_react());
+var import_react8 = __toESM(require_react());
 
 // node_modules/tslib/tslib.es6.js
 var __assign = function() {
@@ -24878,41 +24878,142 @@ var mt = function() {
 var vt = "__sc-".concat(f, "__");
 "undefined" != typeof window && (window[vt] || (window[vt] = 0), 1 === window[vt] && console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."), window[vt] += 1);
 
-// src/App.tsx
-var LookAndFeel = dt`
+// src/Pages/Messenger/Messenger.tsx
+var import_react7 = __toESM(require_react());
 
+// src/Pages/Messenger/Components/Header/Header.tsx
+var import_react6 = __toESM(require_react());
+
+// src/Icons/BugReportIcon/BugReportIcon.tsx
+var import_react2 = __toESM(require_react());
+var BugReportIcon = ({ size = 40 }) => /* @__PURE__ */ import_react2.default.createElement(
+  "svg",
+  {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    height: size,
+    width: size
+  },
+  /* @__PURE__ */ import_react2.default.createElement("path", { d: "M480.062-202Q546-202 592.5-248.615 639-295.231 639-361.244v-158.243Q639-585.5 592.438-632t-112.5-46.5Q414-678.5 367.5-631.885 321-585.269 321-519.256v158.243Q321-295 367.562-248.5t112.5 46.5ZM417-348h126v-25.5H417v25.5Zm0-159h126v-25.5H417v25.5Zm63 66.5Zm.056 264q-50.056 0-91.806-24.75T321-269H217v-25.5h91q-11-32-11.75-65.833-.75-33.834-.75-67.167H217V-453h78.481q0-34.5-.24-68.25Q295-555 308-586.5h-91V-612h103.778Q336-639 359.25-659.25t52.25-32.472L337.5-765l16-16.5 83.75 83.5q21.244-6 42.997-6t43.115 6l85.138-83.5 16 16.5-73.5 73.278q29 12.222 51 32.472T639.222-612H743v25.5h-91q13 31.5 12.75 65.333-.25 33.834-.25 68.167H743v25.5h-78.5q0 33.5-.75 67.25T652-294.5h91v25.5H639q-25.5 43-67.194 67.75t-91.75 24.75Z" })
+);
+var BugReportIcon_default = BugReportIcon;
+
+// src/Icons/BugReportIcon/index.ts
+var BugReportIcon_default2 = BugReportIcon_default;
+
+// src/Icons/ChatIcon/ChatIcon.tsx
+var import_react3 = __toESM(require_react());
+var ChatIcon = ({ size = 40 }) => /* @__PURE__ */ import_react3.default.createElement(
+  "svg",
+  {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    height: size,
+    width: size
+  },
+  /* @__PURE__ */ import_react3.default.createElement("path", { d: "M267-426.833h265.167V-450H267v23.167Zm0-121.667h426v-23.167H267v23.167Zm0-121.667h426v-23.166H267v23.166ZM133.667-182.5v-588.895q0-22.913 16.095-39.009 16.096-16.096 38.852-16.096h582.772q22.756 0 38.852 16.096 16.095 16.096 16.095 38.873v423.062q0 22.777-16.095 38.873-16.096 16.096-38.849 16.096H244.667l-111 111Zm101.166-134.167h536.334q12 0 22-10t10-22v-422.666q0-12-10-22t-22-10H188.833q-12 0-22 10t-10 22v533.667l78-79.001Zm-78 0v-486.666 486.666Z" })
+);
+var ChatIcon_default = ChatIcon;
+
+// src/Icons/ChatIcon/index.ts
+var ChatIcon_default2 = ChatIcon_default;
+
+// src/Icons/CloseIcon/CloseIcon.tsx
+var import_react4 = __toESM(require_react());
+
+// src/Icons/MenuIcon/MenuIcon.tsx
+var import_react5 = __toESM(require_react());
+var MenuIcon = ({ size = 40 }) => /* @__PURE__ */ import_react5.default.createElement(
+  "svg",
+  {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    height: size,
+    width: size
+  },
+  /* @__PURE__ */ import_react5.default.createElement("path", { d: "M173.667-279.333V-302.5h612.666v23.167H173.667Zm0-189.167v-23.167h612.666v23.167H173.667Zm0-189.167v-23.166h612.666v23.166H173.667Z" })
+);
+var MenuIcon_default = MenuIcon;
+
+// src/Icons/MenuIcon/index.ts
+var MenuIcon_default2 = MenuIcon_default;
+
+// src/Pages/Messenger/Components/Header/Header.styles.ts
+var Container = ut.header`
+  position: static;
+  padding:  0 12px;
+  height:     48px;
+  display:    flex;
+  gap:         5px;
 `;
-var Container = ut.div`
-  background: #F0F0F0;
-  height: 100%;
-`;
-var Header = ut.header`
-  display: flex;
-  height: 48px;
-`;
-var Icon = ut.div`
+var IconContainer = ut.div`
   display: inline-block;
-  aspect-ratio: 1;
-  height: 24px;
-  padding: 16px;
-  cursor: pointer;
+  padding: 4px;
 `;
+var Brand = ut.div`
+  flex-grow: 1;
+
+  font-size:   24px;
+  line-height: 48px;
+  font-weight: bold;
+`;
+
+// src/Pages/Messenger/Components/Header/Header.tsx
+var Header = () => {
+  return /* @__PURE__ */ import_react6.default.createElement(Container, null, /* @__PURE__ */ import_react6.default.createElement(IconContainer, null, /* @__PURE__ */ import_react6.default.createElement(ChatIcon_default2, { size: 40 })), /* @__PURE__ */ import_react6.default.createElement(Brand, null, "netfly.io"), /* @__PURE__ */ import_react6.default.createElement(IconContainer, null, /* @__PURE__ */ import_react6.default.createElement(BugReportIcon_default2, { size: 40 })), /* @__PURE__ */ import_react6.default.createElement(IconContainer, null, /* @__PURE__ */ import_react6.default.createElement(MenuIcon_default2, { size: 40 })));
+};
+var Header_default = Header;
+
+// src/Pages/Messenger/Components/Header/index.ts
+var Header_default2 = Header_default;
+
+// src/Pages/Messenger/Messenger.styled.ts
 var Separator = ut.div`
   margin: 0 16px;
   border-bottom: 1px solid black;
 `;
-var Title = ut.div`
-  display: inline-block;
+
+// src/Pages/Messenger/Messenger.tsx
+var Messenger = () => {
+  return /* @__PURE__ */ import_react7.default.createElement(import_react7.default.Fragment, null, /* @__PURE__ */ import_react7.default.createElement(Header_default2, null), /* @__PURE__ */ import_react7.default.createElement(Separator, null));
+};
+var Messenger_default = Messenger;
+
+// src/Pages/Messenger/index.ts
+var Messenger_default2 = Messenger_default;
+
+// src/App.styles.ts
+var LookAndFeel = dt`
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+  body, html, #app {
+    height:                         100%;
+    margin:                            0;
+    padding:                           0;
+
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  body {
+    background-color:            #F0F0F0;
+    color:                       #333333;
+  }
+`;
+
+// src/App.tsx
+var Container2 = ut.div`
+  background: #F0F0F0;
+  height: 100%;
 `;
 var App = () => {
-  return /* @__PURE__ */ import_react2.default.createElement(Container, null, /* @__PURE__ */ import_react2.default.createElement(LookAndFeel, null), /* @__PURE__ */ import_react2.default.createElement(Header, null, /* @__PURE__ */ import_react2.default.createElement(Icon, { className: "material-symbols-outlined" }, "chat_bubble"), /* @__PURE__ */ import_react2.default.createElement(Title, null, "netfly.io"), /* @__PURE__ */ import_react2.default.createElement(Icon, { className: "material-symbols-outlined" }, "bug_report"), /* @__PURE__ */ import_react2.default.createElement(Icon, { className: "material-symbols-outlined" }, "menu")), /* @__PURE__ */ import_react2.default.createElement(Separator, null));
+  return /* @__PURE__ */ import_react8.default.createElement(Container2, null, /* @__PURE__ */ import_react8.default.createElement(LookAndFeel, null), /* @__PURE__ */ import_react8.default.createElement(Messenger_default2, null));
 };
 var App_default = App;
 
 // src/index.tsx
 var container = document.getElementById("app");
 var root = import_client.default.createRoot(container);
-root.render(/* @__PURE__ */ import_react3.default.createElement(App_default, null));
+root.render(/* @__PURE__ */ import_react9.default.createElement(App_default, null));
 /*! Bundled license information:
 
 react/cjs/react.development.js:

@@ -1,5 +1,3 @@
 import Messenger from './Messenger'
 
-export {
-  Messenger,
-}
+export default Messenger
