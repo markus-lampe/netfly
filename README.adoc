@@ -8,6 +8,10 @@ A simple web-based peer-to-peer messenger
 
 TODO
 
+ - Peer-to-Peer
+ - Secure By Design
+ - Open Source
+
 == Documentation
 
 TODO
@@ -26,6 +30,10 @@ TODO
 
 == Acknowledgments
 
-*Icons:* https://fonts.google.com/icons[Material Symbols (Google)]
+*Fonts:*
 
-TODO
+ - https://fonts.google.com/noto/specimen/Noto+Sans[Noto Sans (Google Fonts)]
+
+*Icons:*
+
+ - https://fonts.google.com/icons[Material Symbols (Google)]

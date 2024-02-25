@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../career/.idea/career.iml" filepath="$PROJECT_DIR$/../career/.idea/career.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/netfly.iml" filepath="$PROJECT_DIR$/.idea/netfly.iml" />
     </modules>
   </component>

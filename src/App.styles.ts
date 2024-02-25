@@ -1,7 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 
 const LookAndFeel = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+  @import url('fonts/noto-sans-bold.ttf');
+  @import url('fonts/noto-sans-regular.ttf');
 
   body, html, #app {
     height:                         100%;

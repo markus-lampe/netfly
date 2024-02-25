@@ -18,8 +18,13 @@ self.addEventListener('activate', async event => {
 
 self.addEventListener('fetch', async event => {
   const cachedResponse = await caches.match(event.request)
-  const freshResponse = await fetch(event.request)
 
+  if (cachedResponse && navigator.connection?.saveData) {
+    await event.respondWith(cachedResponse)
+    return;
+  }
+
+  const freshResponse = await fetch(event.request)
   if (freshResponse.ok) {
     const cache = await caches.open(CACHE_NAME)
     await cache.put(event.request, freshResponse.clone())
