@@ -1,23 +1,16 @@
 import { createGlobalStyle } from 'styled-components'
 
-const LookAndFeel = createGlobalStyle`
-  @import url('fonts/noto-sans-bold.ttf');
-  @import url('fonts/noto-sans-regular.ttf');
+export const LookAndFeel = createGlobalStyle`
+  @import url('fonts/red-hat-display.ttf');
 
   body, html, #app {
-    height:                         100%;
-    margin:                            0;
-    padding:                           0;
+    font-family: 'Red Hat Display', sans-serif;
 
-    font-family: 'Noto Sans', sans-serif;
-  }
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 
-  body {
-    background-color:            #F0F0F0;
-    color:                       #333333;
+    background: hwb(212 8% 25%);
   }
 `
-
-export {
-  LookAndFeel,
-}

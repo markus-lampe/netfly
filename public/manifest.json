@@ -4,7 +4,7 @@
   "description": "A simple web-based peer-to-peer messenger",
   "display": "standalone",
   "start_url": "index.html",
-  "background_color": "#ffffff",
+  "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {

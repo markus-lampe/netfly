@@ -1,26 +1,20 @@
-import React  from 'react'
-import styled from 'styled-components'
+import React from 'react'
 
-import { Messenger } from "./Pages";
+import { Messenger, Setup, Welcome } from "./Pages";
 
-import {
-  LookAndFeel,
-
-} from './App.styles'
-
-const Container = styled.div`
-  background: #F0F0F0;
-  height: 100%;
-`
+import AppContext      from './App.context'
+import { LookAndFeel } from './App.styles'
 
 const App = () => {
 
 
   return (
-    <Container>
+    <AppContext.Provider value={{ lang: 'en', mode: 'light', page: 'welcome' }}>
       <LookAndFeel />
+      <Welcome />
+      <Setup />
       <Messenger />
-    </Container>
+    </AppContext.Provider>
   )
 }
 
