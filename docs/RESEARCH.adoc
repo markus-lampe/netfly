@@ -1,0 +1,14 @@
+= Research
+
+== Web APIs
+
+=== Web OTC
+
+You can send SMS via link
+
+Use Case:
+
+ - User enters Phone Number
+ - Button sends SMS
+ - Automatically verify via Web RTC
+
