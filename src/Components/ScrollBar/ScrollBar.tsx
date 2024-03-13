@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Button = () => {
-
+const ScrollBar = () => {
+  
   return (
     <></>
   )
 }
 
-export default Button
+export default ScrollBar

@@ -23551,10 +23551,10 @@ var import_client = __toESM(require_client());
 // src/App.tsx
 var import_react10 = __toESM(require_react());
 
-// src/Pages/Messenger/Messenger.tsx
+// src/Pages/MessengerPage/MessengerPage.tsx
 var import_react7 = __toESM(require_react());
 
-// src/Pages/Messenger/Components/Header/Header.tsx
+// src/Pages/MessengerPage/Components/Header/Header.tsx
 var import_react6 = __toESM(require_react());
 
 // src/Icons/BugReportIcon/BugReportIcon.tsx
@@ -24938,7 +24938,7 @@ var mt = function() {
 var vt = "__sc-".concat(f, "__");
 "undefined" != typeof window && (window[vt] || (window[vt] = 0), 1 === window[vt] && console.warn("It looks like there are several instances of 'styled-components' initialized in this application. This may cause dynamic styles to not render properly, errors during the rehydration process, a missing theme prop, and makes your application bigger without good reason.\n\nSee https://s-c.sh/2BAXzed for more info."), window[vt] += 1);
 
-// src/Pages/Messenger/Components/Header/Header.styles.ts
+// src/Pages/MessengerPage/Components/Header/Header.styles.ts
 var Container = ut.header`
   position: static;
   padding:  0 12px;
@@ -24958,48 +24958,48 @@ var Brand = ut.div`
   font-weight: bold;
 `;
 
-// src/Pages/Messenger/Components/Header/Header.tsx
+// src/Pages/MessengerPage/Components/Header/Header.tsx
 var Header = () => {
   return /* @__PURE__ */ import_react6.default.createElement(Container, null, /* @__PURE__ */ import_react6.default.createElement(IconContainer, null, /* @__PURE__ */ import_react6.default.createElement(ChatIcon_default2, { size: 40 })), /* @__PURE__ */ import_react6.default.createElement(Brand, null, "netfly.io"), /* @__PURE__ */ import_react6.default.createElement(IconContainer, null, /* @__PURE__ */ import_react6.default.createElement(BugReportIcon_default2, { size: 40 })), /* @__PURE__ */ import_react6.default.createElement(IconContainer, null, /* @__PURE__ */ import_react6.default.createElement(MenuIcon_default2, { size: 40 })));
 };
 var Header_default = Header;
 
-// src/Pages/Messenger/Components/Header/index.ts
+// src/Pages/MessengerPage/Components/Header/index.ts
 var Header_default2 = Header_default;
 
-// src/Pages/Messenger/Messenger.styled.ts
+// src/Pages/MessengerPage/MessengerPage.styled.ts
 var Separator = ut.div`
   margin: 0 16px;
   border-bottom: 1px solid black;
 `;
 
-// src/Pages/Messenger/Messenger.tsx
+// src/Pages/MessengerPage/MessengerPage.tsx
 var Messenger = () => {
   return /* @__PURE__ */ import_react7.default.createElement(import_react7.default.Fragment, null, /* @__PURE__ */ import_react7.default.createElement(Header_default2, null), /* @__PURE__ */ import_react7.default.createElement(Separator, null));
 };
 var Messenger_default = Messenger;
 
-// src/Pages/Messenger/index.ts
+// src/Pages/MessengerPage/index.ts
 var Messenger_default2 = Messenger_default;
 
-// src/Pages/Setup/Setup.tsx
+// src/Pages/SetupPage/SetupPage.tsx
 var import_react8 = __toESM(require_react());
 var Setup = () => {
   return /* @__PURE__ */ import_react8.default.createElement(import_react8.default.Fragment, null);
 };
 var Setup_default = Setup;
 
-// src/Pages/Setup/index.ts
+// src/Pages/SetupPage/index.ts
 var Setup_default2 = Setup_default;
 
-// src/Pages/Welcome/Welcome.tsx
+// src/Pages/WelcomePage/WelcomePage.tsx
 var import_react9 = __toESM(require_react());
 var Welcome = () => {
   return /* @__PURE__ */ import_react9.default.createElement(import_react9.default.Fragment, null);
 };
 var Welcome_default = Welcome;
 
-// src/Pages/Welcome/index.ts
+// src/Pages/WelcomePage/index.ts
 var Welcome_default2 = Welcome_default;
 
 // src/App.styles.ts

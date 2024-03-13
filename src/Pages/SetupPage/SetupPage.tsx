@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Page } from '../Pages.styles'
 
-const Setup = () => {
+const SetupPage = () => {
 
   return (
     <>
@@ -12,4 +12,4 @@ const Setup = () => {
   )
 }
 
-export default Setup
+export default SetupPage

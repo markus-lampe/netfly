@@ -1,3 +1,3 @@
-import Messenger from './Messenger'
+import MessengerPage from './MessengerPage'
 
-export default Messenger
+export default MessengerPage

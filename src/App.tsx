@@ -1,20 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { Messenger, Setup, Welcome } from "./Pages";
+import { MessengerPage, SetupPage, WelcomePage } from "./Pages";
 
-import AppContext      from './App.context'
-import { LookAndFeel } from './App.styles'
+import { LookAndFeel, Pages } from './App.styles'
 
 const App = () => {
-
+  const [page, setPage] = useState('welcome')
 
   return (
-    <AppContext.Provider value={{ lang: 'en', mode: 'light', page: 'welcome' }}>
+    <>
       <LookAndFeel />
-      <Welcome />
-      <Setup />
-      <Messenger />
-    </AppContext.Provider>
+
+      <Pages>
+        <WelcomePage   visible={page === 'welcome'}/>
+        <SetupPage     visible={page === 'setup'} />
+        <MessengerPage visible={page === 'messenger'} />
+      </Pages>
+      <Overalays>
+
+      </Overalays>
+    </>
   )
 }
 

@@ -1,9 +1,9 @@
-import Messenger from './Messenger'
-import Setup     from './Setup'
-import Welcome   from './Welcome'
+import MessengerPage from './MessengerPage'
+import SetupPage     from './SetupPage'
+import WelcomePage   from './WelcomePage'
 
 export {
-  Messenger,
-  Setup,
-  Welcome
+  MessengerPage,
+  SetupPage,
+  WelcomePage
 }

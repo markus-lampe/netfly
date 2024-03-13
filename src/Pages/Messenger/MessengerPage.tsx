@@ -4,7 +4,7 @@ import { Header } from './Components'
 
 import { Separator } from './Messenger.styled'
 
-const Messenger = () => {
+const MessengerPage = () => {
 
   return (
     <>
@@ -14,4 +14,4 @@ const Messenger = () => {
   )
 }
 
-export default Messenger
+export default MessengerPage
